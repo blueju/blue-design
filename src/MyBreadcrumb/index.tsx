@@ -1,8 +1,16 @@
 import React from 'react';
 import { Breadcrumb } from 'antd';
 
-export default (props: any) => (
-  <Breadcrumb {...props} separator=">">
-    {props.children}
-  </Breadcrumb>
-);
+function MyBreadcrumb(props: any) {
+  return (
+    <Breadcrumb {...props} separator=">">
+      {props.children}
+    </Breadcrumb>
+  );
+}
+
+const { Item, Separator } = Breadcrumb;
+MyBreadcrumb.Item = Item;
+MyBreadcrumb.Separator = Separator;
+
+export default MyBreadcrumb;
