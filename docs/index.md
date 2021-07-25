@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 ## Hello blued!
 
 > blued = blue + design
