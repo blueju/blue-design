@@ -1,2 +1,1 @@
-
-## Hello myapp!
+## Hello blued!

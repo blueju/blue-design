@@ -1,4 +1,4 @@
-# myapp
+# blued
 
 ## Getting Started
 

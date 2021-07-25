@@ -4,7 +4,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { MyButton } from 'myapp';
+import { MyButton } from 'blued';
 
 export default () => {
   return (
