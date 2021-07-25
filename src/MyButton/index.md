@@ -1,4 +1,4 @@
-## Foo
+## MyButton
 
 Demo:
 
@@ -6,7 +6,13 @@ Demo:
 import React from 'react';
 import { MyButton } from 'myapp';
 
-export default () => <MyButton title="First Demo" />;
+export default () => {
+  return (
+    <>
+      <MyButton type="primary">Primary Button</MyButton>
+    </>
+  );
+};
 ```
 
 More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo
