@@ -9,19 +9,23 @@ order: 4
 ```tsx
 import React from 'react';
 import { MyAnchor } from 'blued';
-import { Anchor } from 'antd';
 
 export default () => {
-  console.dir(MyAnchor);
   return (
-    <Anchor bounds={10}>
-      <Anchor.Link href="#components-anchor-demo-basic" title="Basic demo" />
-      <Anchor.Link href="#components-anchor-demo-static" title="Static demo" />
-      <Anchor.Link href="#API" title="API">
-        <Anchor.Link href="#Anchor-Props" title="Anchor Props" />
-        <Anchor.Link href="#Anchor.Link-Props" title="Anchor.Link Props" />
-      </Anchor.Link>
-    </Anchor>
+    <MyAnchor bounds={10}>
+      <MyAnchor.Link href="#components-anchor-demo-basic" title="Basic demo" />
+      <MyAnchor.Link
+        href="#components-anchor-demo-static"
+        title="Static demo"
+      />
+      <MyAnchor.Link href="#API" title="API">
+        <MyAnchor.Link href="#MyAnchor-Props" title="MyAnchor Props" />
+        <MyAnchor.Link
+          href="#MyAnchor.Link-Props"
+          title="MyAnchor.Link Props"
+        />
+      </MyAnchor.Link>
+    </MyAnchor>
   );
 };
 ```
