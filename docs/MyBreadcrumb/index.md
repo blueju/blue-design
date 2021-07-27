@@ -13,10 +13,9 @@ import { MyBreadcrumb } from 'blued';
 export default () => {
   return (
     <MyBreadcrumb>
-      <MyBreadcrumb.Item>一级菜单</MyBreadcrumb.Item>
-      <MyBreadcrumb.Item href="">二级菜单</MyBreadcrumb.Item>
-      <MyBreadcrumb.Item href="">三级菜单</MyBreadcrumb.Item>
-      <MyBreadcrumb.Item>当前菜单</MyBreadcrumb.Item>
+      <MyBreadcrumb.Item href="#">一级内容</MyBreadcrumb.Item>
+      <MyBreadcrumb.Item href="#">二级内容</MyBreadcrumb.Item>
+      <MyBreadcrumb.Item>当前内容</MyBreadcrumb.Item>
     </MyBreadcrumb>
   );
 };
