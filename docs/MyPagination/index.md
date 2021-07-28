@@ -8,7 +8,8 @@ order: 2
 
 ```tsx
 import React from 'react';
-import { MyPagination } from 'blued';
+import { MyPagination, MyConfigProvider } from 'blued';
+import zhCN from 'antd/lib/locale/zh_CN';
 
 export default () => {
   function onChange(pageNumber) {
@@ -16,12 +17,14 @@ export default () => {
   }
 
   return (
-    <MyPagination
-      showQuickJumper
-      defaultCurrent={2}
-      total={500}
-      onChange={onChange}
-    />
+    <MyConfigProvider locale={zhCN}>
+      <MyPagination
+        showQuickJumper
+        defaultCurrent={2}
+        total={500}
+        onChange={onChange}
+      />
+    </MyConfigProvider>
   );
 };
 ```
