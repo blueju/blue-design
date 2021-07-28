@@ -1,8 +1,11 @@
 ---
-order: 2
+order: 1
+nav:
+  title: 组件
+  order: 1
 ---
 
-## MyPagination
+## MyPagination 分页
 
 分页
 

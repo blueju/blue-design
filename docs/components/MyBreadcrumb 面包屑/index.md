@@ -1,8 +1,9 @@
 ---
-order: 3
+nav:
+  title: 组件
 ---
 
-## MyBreadcrumb
+## MyBreadcrumb 面包屑
 
 分页
 

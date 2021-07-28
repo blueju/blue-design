@@ -1,8 +1,12 @@
 ---
 order: 1
+toc: content
+nav:
+  title: 指南
+  order: 1
 ---
 
-## MyButton
+## MyButton 按钮
 
 主要按钮
 
