@@ -1,0 +1,15 @@
+@import '~antd/lib/style/themes/default.less';
+
+// .@{radio-inner-prefix-cls} {
+//   border-color: @primary-color !important;
+// }
+.@{radio-prefix-cls}-checked {
+  .@{radio-inner-prefix-cls} {
+    border-color: @primary-color;
+    background-color: @primary-color;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+}
