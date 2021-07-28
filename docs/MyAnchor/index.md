@@ -19,11 +19,8 @@ export default () => {
         title="Static demo"
       />
       <MyAnchor.Link href="#API" title="API">
-        <MyAnchor.Link href="#MyAnchor-Props" title="MyAnchor Props" />
-        <MyAnchor.Link
-          href="#MyAnchor.Link-Props"
-          title="MyAnchor.Link Props"
-        />
+        <MyAnchor.Link href="#Anchor-Props" title="Anchor Props" />
+        <MyAnchor.Link href="#Anchor.Link-Props" title="Anchor.Link Props" />
       </MyAnchor.Link>
     </MyAnchor>
   );
