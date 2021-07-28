@@ -25,3 +25,7 @@ Build library via `father-build`,
 ```bash
 $ npm run build
 ```
+
+注意事项：
+1、解决 umi 项目 less 格式化不生效
+https://zhuanlan.zhihu.com/p/388734019
