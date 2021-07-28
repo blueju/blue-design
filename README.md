@@ -1,31 +1,11 @@
 # blued
 
-## Getting Started
+> blued = blue + design
+>
+> reference from：antd = ant + design
 
-Install dependencies,
+只提供设计稿内所涉及到场景的 demo，
 
-```bash
-$ npm i
-```
+减少业务 UI 设计师 & 前端工程师的组件选择困难症，
 
-Start the dev server,
-
-```bash
-$ npm start
-```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
-
-注意事项：
-1、解决 umi 项目 less 格式化不生效
-https://zhuanlan.zhihu.com/p/388734019
+并未删减 ant design 的 api，可根据业务场景，参考 ant design 的 demo 自行组装 api。
