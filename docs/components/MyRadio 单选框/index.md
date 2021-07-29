@@ -1,6 +1,6 @@
 ---
 nav:
-title: 组件
+  title: 组件
 ---
 
 ## MyRadio 单选框
