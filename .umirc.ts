@@ -11,6 +11,6 @@ export default defineConfig({
    * 修改菜单结构时需要关闭，
    * 详见：https://github.com/umijs/dumi/issues/795
    */
-  mfsu: {},
+  // mfsu: {},
   mode: 'site',
 });
