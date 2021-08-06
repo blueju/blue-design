@@ -13,4 +13,7 @@ export default defineConfig({
    */
   // mfsu: {},
   mode: 'site',
+  history: {
+    type: 'hash',
+  },
 });
