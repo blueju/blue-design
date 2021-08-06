@@ -1,0 +1,23 @@
+@import '~antd/lib/style/themes/default.less';
+
+@tab-prefix-cls: ~'@{ant-prefix}-tabs';
+
+.oa {
+  :global {
+    .@{tab-prefix-cls} {
+      &-tab {
+        border-radius: 8px 8px 0 0 !important;
+        background: @white !important;
+        border: 0 !important;
+
+        &-active {
+          background: @primary-color !important;
+
+          .ant-tabs-tab-btn {
+            color: @white !important;
+          }
+        }
+      }
+    }
+  }
+}
