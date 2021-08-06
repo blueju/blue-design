@@ -21,3 +21,27 @@
     }
   }
 }
+
+.credit {
+  :global {
+    .@{tab-prefix-cls} {
+      &-tab {
+        border-radius: 8px 8px 0 0 !important;
+        background: @white !important;
+        border: 0 !important;
+
+        &-active {
+          background: linear-gradient(
+            180deg,
+            #7fb7ff 0%,
+            #2c7ce2 100%
+          ) !important;
+
+          .ant-tabs-tab-btn {
+            color: @white !important;
+          }
+        }
+      }
+    }
+  }
+}

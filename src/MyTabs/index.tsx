@@ -11,16 +11,25 @@ class MyTabs extends React.Component {
 
   render() {
     // @ts-ignore
-    if (this.props?.type === 'oa') {
-      return (
-        <div className={styles.oa}>
-          <Tabs {...this.props} type="card">
-            {this.props.children}
-          </Tabs>
-        </div>
-      );
-    } else {
-      return <Tabs {...this.props}>{this.props.children}</Tabs>;
+    switch (this.props?.type) {
+      case 'oa':
+        return (
+          <div className={styles.oa}>
+            <Tabs {...this.props} type="card">
+              {this.props.children}
+            </Tabs>
+          </div>
+        );
+      case 'credit':
+        return (
+          <div className={styles.credit}>
+            <Tabs {...this.props} type="card">
+              {this.props.children}
+            </Tabs>
+          </div>
+        );
+      default:
+        return <Tabs {...this.props}>{this.props.children}</Tabs>;
     }
   }
 }
