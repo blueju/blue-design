@@ -13,7 +13,7 @@ nav:
 
 <code src="./demo-2.jsx" background="#f5f5f5"></code>
 
-### 通用（灰色背景）
+### 通用一（灰色背景）
 
 <code src="./demo-3.jsx" background="#f5f5f5"></code>
 
