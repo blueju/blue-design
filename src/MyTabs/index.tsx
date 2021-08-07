@@ -28,6 +28,22 @@ class MyTabs extends React.Component {
             </Tabs>
           </div>
         );
+      case 'grayBackground':
+        return (
+          <div id={styles.grayBackground}>
+            <Tabs {...this.props} type="card">
+              {this.props.children}
+            </Tabs>
+          </div>
+        );
+      case 'whiteBackground':
+        return (
+          <div id={styles.whiteBackground}>
+            <Tabs {...this.props} type="card">
+              {this.props.children}
+            </Tabs>
+          </div>
+        );
       default:
         return <Tabs {...this.props}>{this.props.children}</Tabs>;
     }

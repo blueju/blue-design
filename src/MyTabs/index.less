@@ -46,3 +46,47 @@
     }
   }
 }
+
+/** 尝试性使用 id 来提高 css 优先级 */
+#grayBackground {
+  :global {
+    .@{tab-prefix-cls} {
+      &-tab {
+        border-radius: 0;
+        background: @white;
+        border: 0;
+        margin-left: 0;
+
+        &-active {
+          background: @primary-color;
+
+          .ant-tabs-tab-btn {
+            color: @white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/** 尝试性使用 id 来提高 css 优先级 */
+#whiteBackground {
+  :global {
+    .@{tab-prefix-cls} {
+      &-tab {
+        border-radius: 0;
+        background: #ebebeb;
+        border: 0;
+        margin-left: 0;
+
+        &-active {
+          background: @primary-color;
+
+          .ant-tabs-tab-btn {
+            color: @white !important;
+          }
+        }
+      }
+    }
+  }
+}
