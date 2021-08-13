@@ -1,9 +1,6 @@
 ---
-order: 1
-toc: content
 nav:
-  title: 指南
-  order: 1
+  title: 组件
 ---
 
 ## MyButton 按钮

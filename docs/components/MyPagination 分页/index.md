@@ -1,8 +1,6 @@
 ---
-order: 1
 nav:
   title: 组件
-  order: 1
 ---
 
 ## MyPagination 分页
