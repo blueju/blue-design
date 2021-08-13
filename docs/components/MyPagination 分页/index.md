@@ -3,7 +3,11 @@ nav:
   title: 组件
 ---
 
-## MyPagination 分页
+# MyPagination 分页
+
+> 与 antd 相比，修改了什么：
+>
+> 1、统一分页的格式，页码+页数设置+跳转
 
 分页
 
