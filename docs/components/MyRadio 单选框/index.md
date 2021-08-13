@@ -3,7 +3,11 @@ nav:
   title: 组件
 ---
 
-## MyRadio 单选框
+# MyRadio 单选框
+
+> 与 antd 相比，修改了什么：
+>
+> 1、进行了反色调整，详情请与 antd 官网的 radio 单选框比较
 
 ```tsx
 import React from 'react';
