@@ -19,7 +19,6 @@ export default defineConfig({
   /**
    * https://d.umijs.org/zh-CN/guide/faq#部署到github-pages
    */
-  base: '/blued',
   publicPath: './',
   exportStatic: {},
 });
