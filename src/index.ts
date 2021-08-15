@@ -8,3 +8,4 @@ export { default as MyConfigProvider } from './MyConfigProvider';
 export { default as MyRadio } from './MyRadio';
 export { default as MyInput } from './MyInput';
 export { default as MyTabs } from './MyTabs';
+export { default as MyUpload } from './MyUpload';
