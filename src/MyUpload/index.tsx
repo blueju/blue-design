@@ -1,6 +1,7 @@
 import React from 'react';
-import { Upload } from 'antd';
+import { Progress, Upload } from 'antd';
 import styles from './index.less';
+import IconFont from '../iconfont';
 
 class MyUpload extends React.Component {
   static LIST_IGNORE: string;
@@ -8,10 +9,32 @@ class MyUpload extends React.Component {
 
   constructor(props: any) {
     super(props);
+    this.itemRender = this.itemRender.bind(this);
+  }
+
+  // @ts-ignore
+  itemRender(originNode, file, fileList, actions) {
+    console.log(originNode, file, fileList, actions);
+    return (
+      <>
+        {originNode}
+        <Progress></Progress>
+      </>
+    );
   }
 
   render() {
-    return <Upload {...this.props}>{this.props.children}</Upload>;
+    // @ts-ignore
+    switch (this.props?.type) {
+      case 'oa':
+        return (
+          <Upload {...this.props} itemRender={this.itemRender}>
+            {this.props.children}
+          </Upload>
+        );
+      default:
+        return <Upload {...this.props}>{this.props.children}</Upload>;
+    }
   }
 }
 
