@@ -19,6 +19,8 @@ class MyUpload extends React.Component {
     this.itemRender = this.itemRender.bind(this);
   }
 
+  oaUploadRef = React.createRef();
+
   getStatusIcon(file: UploadFile) {
     switch (file.status) {
       case 'uploading':
@@ -34,9 +36,20 @@ class MyUpload extends React.Component {
     }
   }
 
+  reUpload(file: UploadFile) {
+    // @ts-ignore
+    this.oaUploadRef.current.upload.uploader.uploadFiles([file]);
+  }
+
   getPercentOrReUploadIcon(file: UploadFile) {
     if (file.status === 'error') {
-      return <IconFont type="icon-re-upload" className={styles.reUploadIcon} />;
+      return (
+        <IconFont
+          type="icon-re-upload"
+          className={styles.reUploadIcon}
+          onClick={this.reUpload.bind(this, file)}
+        />
+      );
     } else {
       return (
         <div className={styles.percent}>
@@ -88,7 +101,11 @@ class MyUpload extends React.Component {
     switch (this.props?.type) {
       case 'oa':
         return (
-          <Upload {...this.props} itemRender={this.itemRender}>
+          <Upload
+            ref={this.oaUploadRef}
+            {...this.props}
+            itemRender={this.itemRender}
+          >
             {this.props.children}
           </Upload>
         );
