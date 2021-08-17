@@ -47,7 +47,7 @@ class MyUpload extends React.Component {
         <IconFont
           type="icon-re-upload"
           className={styles.reUploadIcon}
-          onClick={this.reUpload.bind(this, file)}
+          onClick={() => this.reUpload(file)}
         />
       );
     } else {
@@ -59,15 +59,36 @@ class MyUpload extends React.Component {
     }
   }
 
+  getFileIcon(file: UploadFile) {
+    const ext = file.name.split('.').pop();
+    switch (ext) {
+      case 'doc':
+        return <IconFont type="icon-word" style={{ fontSize: 18 }} />;
+      case 'docx':
+        return <IconFont type="icon-word" style={{ fontSize: 18 }} />;
+      case 'ppt':
+        return <IconFont type="icon-ppt" style={{ fontSize: 18 }} />;
+      case 'pptx':
+        return <IconFont type="icon-ppt" style={{ fontSize: 18 }} />;
+      case 'zip':
+        return <IconFont type="icon-zip" style={{ fontSize: 18 }} />;
+      case 'rar':
+        return <IconFont type="icon-zip" style={{ fontSize: 18 }} />;
+      default:
+        return <IconFont type="icon-file" style={{ fontSize: 18 }} />;
+    }
+  }
+
   // @ts-ignore
   itemRender(originNode, file, fileList, actions) {
     console.log(originNode, file, fileList, actions);
     return (
-      <div style={{ padding: 6 }}>
+      <div
+        className={styles.itemRender}
+        style={{ padding: 6, backgroundColor: '#f0f6ff' }}
+      >
         <Row gutter={6}>
-          <Col flex="none">
-            <IconFont type="icon-word" style={{ fontSize: 18 }} />
-          </Col>
+          <Col flex="none">{this.getFileIcon(file)}</Col>
           <Col flex="auto">{file.name}</Col>
           <Col flex="none">
             <CloseCircleFilled
