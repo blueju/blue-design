@@ -19,7 +19,7 @@ class MyProgress extends React.Component {
           }}
         >
           <div style={{ marginRight: 6 }}>
-            <LoadingOutlined className={{}} />
+            <LoadingOutlined />
           </div>
           <Progress {...this.props} />
         </div>
