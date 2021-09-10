@@ -1,7 +1,7 @@
 ---
 hero:
   title: blued
-  desc: 基于公司组件库需求场景和UI设计稿，复刻的基础组件库，
+  desc: 基于公司组件库需求场景和UI设计稿，复刻的基础组件库
   actions:
     - text: 组件
       link: /components/my-anchor%20锚点
@@ -17,3 +17,15 @@ features:
     desc: Balabala
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
+
+# README
+
+> blued = blue + design
+>
+> reference from：antd = ant + design
+
+只提供设计稿内所涉及到场景的 demo，
+
+减少业务 UI 设计师 & 前端工程师的组件选择困难症，
+
+并未删减 ant design 的 api，可根据业务场景，参考 ant design 的 demo 自行组装 api。
