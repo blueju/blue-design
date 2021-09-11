@@ -3,7 +3,7 @@ hero:
   title: blued
   desc: 基于公司组件库需求场景和 UI 设计稿，复刻的基础组件库
   actions:
-    - text: 组件
+    - text: 开始
       link: /components/my-anchor%20锚点
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
