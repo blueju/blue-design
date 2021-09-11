@@ -1,7 +1,7 @@
 ---
 hero:
   title: blued
-  desc: 基于公司组件库需求场景和UI设计稿，复刻的基础组件库
+  desc: 基于公司组件库需求场景和 UI 设计稿，复刻的基础组件库
   actions:
     - text: 组件
       link: /components/my-anchor%20锚点

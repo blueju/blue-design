@@ -1,1 +1,1 @@
-docs/index.md
+详见 docs/index.md
