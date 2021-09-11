@@ -1,7 +1,8 @@
 {
-  "private": true,
+  "private": false,
   "name": "blued",
   "version": "1.0.0",
+  "author": "blueju",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
