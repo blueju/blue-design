@@ -8,7 +8,7 @@ export default () => {
 
   console.dir(MyTabs);
   return (
-    <MyTabs defaultActiveKey="1" onChange={callback} type="whiteBackground">
+    <MyTabs defaultActiveKey="1" onChange={callback} scene="whiteBackground">
       <MyTabs.TabPane tab="Tab 1" key="1">
         Content of Tab Pane 1
       </MyTabs.TabPane>

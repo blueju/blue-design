@@ -11,7 +11,7 @@ class MyTabs extends React.Component {
 
   render() {
     // @ts-ignore
-    switch (this.props?.type) {
+    switch (this.props?.scene) {
       case 'oa':
         return (
           <div className={styles.oa}>
