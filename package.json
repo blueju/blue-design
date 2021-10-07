@@ -3,6 +3,7 @@
   "name": "blued",
   "version": "1.0.0",
   "author": "blueju",
+  "license": "MIT",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
