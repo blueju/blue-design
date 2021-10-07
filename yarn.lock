@@ -1673,19 +1673,6 @@
     magic-string "^0.25.7"
     resolve "^1.17.0"
 
-"@rollup/plugin-commonjs@^21.0.0":
-  version "21.0.0"
-  resolved "https://registry.npmmirror.com/@rollup/plugin-commonjs/download/@rollup/plugin-commonjs-21.0.0.tgz?cache=0&sync_timestamp=1633110628607&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40rollup%2Fplugin-commonjs%2Fdownload%2F%40rollup%2Fplugin-commonjs-21.0.0.tgz#b9e4342855ea20b5528f4587b9a90f642196a502"
-  integrity sha1-ueQ0KFXqILVSj0WHuakPZCGWpQI=
-  dependencies:
-    "@rollup/pluginutils" "^3.1.0"
-    commondir "^1.0.1"
-    estree-walker "^2.0.1"
-    glob "^7.1.6"
-    is-reference "^1.2.1"
-    magic-string "^0.25.7"
-    resolve "^1.17.0"
-
 "@rollup/plugin-inject@4.0.2":
   version "4.0.2"
   resolved "https://registry.npm.taobao.org/@rollup/plugin-inject/download/@rollup/plugin-inject-4.0.2.tgz#55b21bb244a07675f7fdde577db929c82fc17395"
