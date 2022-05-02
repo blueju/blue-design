@@ -1,8 +1,8 @@
 import commonjs from '@rollup/plugin-commonjs';
 
 export default {
-  esm: 'rollup',
-  cjs: 'rollup',
+  esm: 'babel',
+  cjs: 'babel',
   umd: {
     globals: {
       blued: 'blued',
