@@ -19,9 +19,12 @@
     console.dir(blued);
     class App extends React.Component {
       render() {
-        return <blued.Button type="primary" disabled>
-          这是一个按钮
-        </blued.Button>
+        return (
+          <div>
+            <blued.MyButton type="primary" disabled>这是一个按钮</blued.MyButton>
+            <blued.MyPagination></blued.MyPagination>
+          </div>
+        )
       }
     }
     ReactDOM.render(<App />, document.getElementById("root"));
