@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>blued</title>
+  <script src="./react.development.js"></script>
+  <script src="./react-dom.development.js"></script>
+  <script src="./babel.min.js"></script>
+  <script src="./moment-with-locales.min.js"></script>
+  <script src="./lodash.min.js"></script>
+  <!-- ngfed -->
+  <script src="../../dist/blued.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    console.dir(blued);
+    class App extends React.Component {
+      render() {
+        return <blued.Button type="primary" disabled>
+          这是一个按钮
+        </blued.Button>
+      }
+    }
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+
+</html>
