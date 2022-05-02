@@ -1,7 +1,6 @@
 import React from 'react';
 import { Progress } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
-import styles from './index.less';
 
 class MyProgress extends React.Component {
   constructor(props: any) {

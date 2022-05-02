@@ -1,29 +1,30 @@
 @import '~antd/lib/style/themes/default.less';
 
-.lineAnchor {
-  :global {
-    .@{ant-prefix}-anchor-wrapper {
-      margin-right: -4px;
-      padding-right: 4px;
-      .@{ant-prefix}-anchor {
-        padding-right: 2px;
+.blue-anchor {
+  .@{ant-prefix}-anchor-wrapper {
+    margin-right: -4px;
+    padding-right: 4px;
+
+    .@{ant-prefix}-anchor {
+      padding-right: 2px;
+    }
+
+    .@{ant-prefix}-anchor-ink {
+      right: 0;
+      left: unset;
+      // 覆盖 ball 的样式
+      &-ball {
+        width: 2px;
+        height: 16px;
+        background-color: @primary-color;
+        margin-top: -3px;
+        border: unset;
       }
-      .@{ant-prefix}-anchor-ink {
-        right: 0;
-        left: unset;
-        // 覆盖 ball 的样式
-        &-ball {
-          width: 2px;
-          height: 16px;
-          background-color: @primary-color;
-          margin-top: -3px;
-          border: unset;
-        }
-      }
-      .@{ant-prefix}-anchor-link {
-        padding-right: 16px;
-        text-align: right;
-      }
+    }
+
+    .@{ant-prefix}-anchor-link {
+      padding-right: 16px;
+      text-align: right;
     }
   }
 }

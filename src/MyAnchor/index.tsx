@@ -1,6 +1,6 @@
 import React from 'react';
 import { Anchor } from 'antd';
-import styles from './index.less';
+import './index.less';
 
 // console.dir(Anchor);
 
@@ -47,7 +47,7 @@ class MyAnchor extends React.Component {
     // @ts-ignore
     if (this.props?.anchorType === 'line') {
       return (
-        <div className={styles.lineAnchor}>
+        <div className="blue-anchor">
           <Anchor {...this.props}>{this.props.children}</Anchor>
         </div>
       );
@@ -56,5 +56,6 @@ class MyAnchor extends React.Component {
     }
   }
 }
+
 MyAnchor.Link = Anchor.Link;
 export default MyAnchor;

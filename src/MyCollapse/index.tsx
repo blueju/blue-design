@@ -3,7 +3,7 @@ import { Collapse, CollapseProps } from 'antd';
 
 // @ts-ignore
 import expandIcon from './expand-icon.png';
-import styles from './index.less';
+import './index.less';
 
 interface MyCollapseProps extends CollapseProps {
   /** 应用场景 */
@@ -27,9 +27,7 @@ const MyCollapse: MyCollapseInterface = (props: MyCollapseProps) => {
       <img
         alt="自定义切换图标"
         src={expandIcon}
-        className={
-          isActive ? styles.expandIconActive : styles.expandIconInactive
-        }
+        className={isActive ? 'expand-icon-active' : 'expand-icon-inactive'}
         style={{ transition: 'transform .24s' }}
       />
     );

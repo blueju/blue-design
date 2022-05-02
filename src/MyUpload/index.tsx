@@ -2,12 +2,11 @@ import React from 'react';
 import { Progress, Upload, Row, Col } from 'antd';
 import { UploadFile } from 'antd/lib/upload/interface';
 import {
-  BorderOutlined,
   CloseCircleFilled,
   CheckCircleFilled,
   LoadingOutlined,
 } from '@ant-design/icons';
-import styles from './index.less';
+import './index.less';
 import IconFont from '../iconfont';
 
 class MyUpload extends React.Component {
@@ -24,15 +23,15 @@ class MyUpload extends React.Component {
   getStatusIcon(file: UploadFile) {
     switch (file.status) {
       case 'uploading':
-        return <LoadingOutlined className={styles.loadingOutlined} />;
+        return <LoadingOutlined className="loading" />;
       case 'error':
         return file.percent === 100 ? (
-          <CheckCircleFilled className={styles.checkCircleFilled} />
+          <CheckCircleFilled className="check" />
         ) : (
-          <CloseCircleFilled className={styles.closeCircleFilled} />
+          <CloseCircleFilled className="close" />
         );
       case 'done':
-        return <CheckCircleFilled className={styles.checkCircleFilled} />;
+        return <CheckCircleFilled className="check" />;
     }
   }
 
@@ -46,15 +45,13 @@ class MyUpload extends React.Component {
       return (
         <IconFont
           type="icon-re-upload"
-          className={styles.reUploadIcon}
+          className="re-upload"
           onClick={() => this.reUpload(file)}
         />
       );
     } else {
       return (
-        <div className={styles.percent}>
-          {Math.floor(file.percent || 0) + '%'}
-        </div>
+        <div className="percent">{Math.floor(file.percent || 0) + '%'}</div>
       );
     }
   }
@@ -84,7 +81,7 @@ class MyUpload extends React.Component {
     console.log(originNode, file, fileList, actions);
     return (
       <div
-        className={styles.itemRender}
+        className="item-render"
         style={{ padding: 6, backgroundColor: '#f0f6ff' }}
       >
         <Row gutter={6}>

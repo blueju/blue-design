@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tabs } from 'antd';
-import styles from './index.less';
+import './index.less';
 
 class MyTabs extends React.Component {
   static TabPane: any;
@@ -14,7 +14,7 @@ class MyTabs extends React.Component {
     switch (this.props?.scene) {
       case 'oa':
         return (
-          <div className={styles.oa}>
+          <div className="blue-oa">
             <Tabs {...this.props} type="card">
               {this.props.children}
             </Tabs>
@@ -22,7 +22,7 @@ class MyTabs extends React.Component {
         );
       case 'credit':
         return (
-          <div className={styles.credit}>
+          <div className="blue-credit">
             <Tabs {...this.props} type="card">
               {this.props.children}
             </Tabs>
@@ -30,7 +30,7 @@ class MyTabs extends React.Component {
         );
       case 'grayBackground':
         return (
-          <div id={styles.grayBackground}>
+          <div id="gray-background">
             <Tabs {...this.props} type="card">
               {this.props.children}
             </Tabs>
@@ -38,7 +38,7 @@ class MyTabs extends React.Component {
         );
       case 'whiteBackground':
         return (
-          <div id={styles.whiteBackground}>
+          <div id="white-background">
             <Tabs {...this.props} type="card">
               {this.props.children}
             </Tabs>
