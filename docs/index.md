@@ -38,6 +38,9 @@ The 'this' keyword is equivalent to 'undefined' at the top level of an ES module
 Circular dependency: node_modules\antd\es\tree\Tree.js -> node_modules\antd\es\tree\DirectoryTree.js -> node_modules\antd\es\tree\Tree.js
 ```
 
+社区给的方案是在 rollup 的 onwarn 函数中发现如果是这两个错误，就不输出。
+但是在 dumi 和 father-build 的文档中貌似并未对外提供 rollup 的 onwarn 的配置方式，因此后续我可能会打算直接引入 rollup 进行 umd 打包，cjs 和 esm 的打包仍然交给 rollup 处理。
+
 参考地址：
 
 1. https://github.com/rollup/rollup/issues/1518
