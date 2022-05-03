@@ -8,7 +8,7 @@ export { default as MyConfigProvider } from './MyConfigProvider';
 export { default as MyRadio } from './MyRadio';
 export { default as MyInput } from './MyInput';
 export { default as MyTabs } from './MyTabs';
-export { default as MyUpload } from './MyUpload';
+// export { default as MyUpload } from './MyUpload';
 export { default as MyProgress } from './MyProgress';
 export { default as MySelect } from './MySelect';
 export { default as MySpace } from './MySpace';
