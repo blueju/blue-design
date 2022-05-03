@@ -27,3 +27,19 @@ footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](http
 > reference from：antd = ant + design
 
 只提供设计稿内所涉及到场景的 demo，并未删减 ant design 的 api，可根据业务场景，参考 ant design 的 demo 自行组装 api。
+
+打包时出现以下两个类似错误（可能）是正常现象，暂未发现影响功能。
+
+```
+The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten
+```
+
+```
+Circular dependency: node_modules\antd\es\tree\Tree.js -> node_modules\antd\es\tree\DirectoryTree.js -> node_modules\antd\es\tree\Tree.js
+```
+
+参考地址：
+
+1. https://github.com/rollup/rollup/issues/1518
+2. https://stackoverflow.com/questions/43556940/rollup-js-and-this-keyword-is-equivalent-to-undefined
+3. https://github.com/rollup/rollup/issues/1089
