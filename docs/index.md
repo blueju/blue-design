@@ -4,7 +4,7 @@ hero:
   desc: blue-design，基于曾参与公司组件库搭建及开发的经验（和一些看不惯的小问题），自己搞的一套基础组件库。<br/>（⚠⚠⚠ 本仓库不会经常更新）
   actions:
     - text: 开始
-      link: /components/my-anchor%20锚点
+      link: /components/anchor%20锚点
     - text: Github
       link: https://github.com/blueju/blue-design
 features:
