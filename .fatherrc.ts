@@ -8,4 +8,5 @@ export default {
     name: 'blued',
     file: 'blued',
   },
+  extractCSS: true,
 };

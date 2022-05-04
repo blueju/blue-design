@@ -1,7 +1,7 @@
 ---
 hero:
   title: blue-design
-  desc: blue-design，基于曾参与公司组件库搭建及开发的经验（和一些看不惯的小问题），自己搞的一套基础组件库。<br/>（⚠⚠⚠ 本仓库不会经常更新）
+  desc: blue-design，blue-design，基于曾参与公司组件库搭建及开发的经验，自己搞的一套基础组件库壳子，基本可直接套壳使用。<br/>（⚠⚠⚠ 本仓库不会经常更新）
   actions:
     - text: 开始
       link: /components/anchor%20锚点
