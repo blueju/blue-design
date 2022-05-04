@@ -36,11 +36,11 @@
   },
   "devDependencies": {
     "@umijs/test": "^3.5.15",
-    "dumi": "^1.1.24",
-    "father-build": "^1.19.7",
+    "dumi": "^1.1.40",
+    "father-build": "^1.22.1",
     "gh-pages": "^3.2.3",
     "lint-staged": "^10.5.4",
-    "prettier": "^2.3.2",
+    "prettier": "^2.6.2",
     "yorkie": "^2.0.0"
   },
   "peerDependencies": {
