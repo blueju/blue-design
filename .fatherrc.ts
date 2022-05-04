@@ -1,4 +1,5 @@
 import url from '@rollup/plugin-url';
+import postcssurl from 'postcss-url';
 
 export default {
   esm: 'babel',
@@ -15,6 +16,11 @@ export default {
     url({
       // 1MB
       limit: 1 * 1024 * 1024,
+    }),
+  ],
+  extraPostCSSPlugins: [
+    postcssurl({
+      url: 'inline',
     }),
   ],
 };
