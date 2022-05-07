@@ -4,50 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <title>blued</title>
-  <link rel="stylesheet" type="text/css" href="../../dist/blued.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/blued.css" />
 </head>
 
 <body>
   <div id="root"></div>
+  <!-- antd 也一样需要的前置依赖 -->
   <script src="./react.development.js"></script>
   <script src="./react-dom.development.js"></script>
-  <script src="./babel.min.js"></script>
   <script src="./moment-with-locales.min.js"></script>
   <script src="./lodash.min.js"></script>
+  <!-- 在浏览器直接写新语法时，需要用到的运行时 babel 编译依赖 -->
+  <script src="./babel.min.js"></script>
   <!-- blued -->
   <script src="../../dist/blued.js"></script>
   <script type="text/babel">
     console.dir(blued);
     class App extends React.Component {
       render() {
+        const {
+          Button,
+          Pagination,
+          Breadcrumb,
+          Anchor,
+          TestImagePack
+        } = blued;
         return (
           <div>
-            <blued.Button type="primary" disabled>这是一个按钮</blued.Button>
-            <blued.Pagination />
-            <blued.Breadcrumb>
-              <blued.Breadcrumb.Item>Home</blued.Breadcrumb.Item>
-              <blued.Breadcrumb.Item>
+            <Button type="primary" disabled>
+              这是一个按钮
+            </Button>
+            <Pagination />
+            <Breadcrumb>
+              <Breadcrumb.Item>Home</Breadcrumb.Item>
+              <Breadcrumb.Item>
                 <a href="">Application Center</a>
-              </blued.Breadcrumb.Item>
-              <blued.Breadcrumb.Item>
+              </Breadcrumb.Item>
+              <Breadcrumb.Item>
                 <a href="">Application List</a>
-              </blued.Breadcrumb.Item>
-              <blued.Breadcrumb.Item>An Application</blued.Breadcrumb.Item>
-            </blued.Breadcrumb>
-            <blued.Anchor>
-              <blued.Anchor.Link href="#components-anchor-demo-basic" title="Basic demo" />
-              <blued.Anchor.Link href="#components-anchor-demo-static" title="Static demo" />
-              <blued.Anchor.Link href="#API" title="API">
-                <blued.Anchor.Link href="#Anchor-Props" title="Anchor Props" />
-                <blued.Anchor.Link href="#Link-Props" title="Link Props" />
-              </blued.Anchor.Link>
-            </blued.Anchor>
-            <blued.TestImagePack/>
+              </Breadcrumb.Item>
+              <Breadcrumb.Item>An Application</Breadcrumb.Item>
+            </Breadcrumb>
+            <Anchor>
+              <Anchor.Link
+                href="#components-anchor-demo-basic"
+                title="Basic demo"
+              />
+              <Anchor.Link
+                href="#components-anchor-demo-static"
+                title="Static demo"
+              />
+              <Anchor.Link href="#API" title="API">
+                <Anchor.Link href="#Anchor-Props" title="Anchor Props" />
+                <Anchor.Link href="#Link-Props" title="Link Props" />
+              </Anchor.Link>
+            </Anchor>
+            <TestImagePack />
           </div>
-        )
+        );
       }
     }
-    ReactDOM.render(<App />, document.getElementById("root"));
+
+    ReactDOM.render(<App />, document.getElementById('root'));
   </script>
 </body>
 

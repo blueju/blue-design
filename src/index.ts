@@ -16,3 +16,4 @@ export { default as Menu } from './MyMenu';
 export { default as Dropdown } from './MyDropdown';
 export { default as Slider } from './MySlider';
 export { default as Collapse } from './MyCollapse';
+export { default as TestImagePack } from './MyTestImagePack';
