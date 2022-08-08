@@ -15,37 +15,29 @@ class MyTabs extends React.Component {
       case 'oa':
         return (
           <div className="blue-oa">
-            <Tabs {...this.props} type="card">
-              {this.props.children}
-            </Tabs>
+            <Tabs {...this.props} type="card" />
           </div>
         );
       case 'credit':
         return (
           <div className="blue-credit">
-            <Tabs {...this.props} type="card">
-              {this.props.children}
-            </Tabs>
+            <Tabs {...this.props} type="card" />
           </div>
         );
       case 'grayBackground':
         return (
           <div id="gray-background">
-            <Tabs {...this.props} type="card">
-              {this.props.children}
-            </Tabs>
+            <Tabs {...this.props} type="card" />
           </div>
         );
       case 'whiteBackground':
         return (
           <div id="white-background">
-            <Tabs {...this.props} type="card">
-              {this.props.children}
-            </Tabs>
+            <Tabs {...this.props} type="card" />
           </div>
         );
       default:
-        return <Tabs {...this.props}>{this.props.children}</Tabs>;
+        return <Tabs {...this.props} />;
     }
   }
 }
