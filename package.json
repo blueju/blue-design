@@ -37,6 +37,7 @@
   "devDependencies": {
     "@rollup/plugin-url": "^7.0.0",
     "@types/postcss-url": "^10.0.0",
+    "@types/react": "^18.0.17",
     "@umijs/test": "^3.5.15",
     "dumi": "^1.1.40",
     "father-build": "^1.22.1",
