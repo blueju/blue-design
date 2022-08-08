@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { Progress, Upload, Row, Col } from 'antd';
 import { UploadFile } from 'antd/lib/upload/interface';
@@ -120,14 +121,14 @@ class MyUpload extends React.Component {
       case 'oa':
         return (
           <Upload
-            ref={this.oaUploadRef}
-            {...this.props}
-            itemRender={this.itemRender}
+          ref={this.oaUploadRef}
+          {...this.props}
+          itemRender={this.itemRender}
           >
             {this.props.children}
           </Upload>
         );
-      default:
+        default:
         return <Upload {...this.props}>{this.props.children}</Upload>;
     }
   }

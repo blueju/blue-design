@@ -48,11 +48,11 @@ class MyAnchor extends React.Component {
     if (this.props?.anchorType === 'line') {
       return (
         <div className="blue-anchor">
-          <Anchor {...this.props}>{this.props.children}</Anchor>
+          <Anchor {...this.props} />
         </div>
       );
     } else {
-      return <Anchor {...this.props}>{this.props.children}</Anchor>;
+      return <Anchor {...this.props} />;
     }
   }
 }
