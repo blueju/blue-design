@@ -4,6 +4,7 @@ specifiers:
   '@ant-design/icons': ^4.7.0
   '@rollup/plugin-url': ^7.0.0
   '@types/postcss-url': ^10.0.0
+  '@types/react': ^18.0.17
   '@umijs/test': ^3.5.15
   antd: ^4.20.2
   dumi: ^1.1.40
@@ -21,6 +22,7 @@ dependencies:
 devDependencies:
   '@rollup/plugin-url': 7.0.0
   '@types/postcss-url': 10.0.0
+  '@types/react': 18.0.17
   '@umijs/test': 3.5.32
   dumi: 1.1.47
   father-build: 1.22.3
@@ -2350,7 +2352,7 @@ packages:
     resolution: {integrity: sha512-WOSetDV3YPxbkVJAdv/bqExJjmcdCi/vpCJh3NfQOy1X15vHMSiMioXIcGekXDJJYhqGUMDo9e337mh508foAA==}
     dependencies:
       '@types/history': 5.0.0
-      '@types/react': 18.0.15
+      '@types/react': 18.0.17
       '@types/react-router': 5.1.18
     dev: true
 
@@ -2358,7 +2360,7 @@ packages:
     resolution: {integrity: sha512-db1mx37a1EJDf1XeX8jJN7R3PZABmJQXR8r28yUjVMFSjkmnQo6X6pOEEmNl+Tp2gYQOGPdYbFIipBtdElZ3Yg==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 16.14.29
+      '@types/react': 18.0.17
       '@types/react-router': 5.1.18
     dev: true
 
@@ -2366,7 +2368,7 @@ packages:
     resolution: {integrity: sha512-D5mHD6TbdV/DNHYsnwBTv+y73ei+mMjrkGrla86HthE4/PVvL1J94Bu3qABU+COXzpL23T1EZapVVpwHuBXiUg==}
     dependencies:
       '@types/history': 5.0.0
-      '@types/react': 18.0.15
+      '@types/react': 18.0.17
       '@types/react-router': 5.1.12
     dev: true
 
@@ -2374,14 +2376,14 @@ packages:
     resolution: {integrity: sha512-0bhXQwHYfMeJlCh7mGhc0VJTRm0Gk+Z8T00aiP4702mDUuLs9SMhnd2DitpjWFjdOecx2UXtICK14H9iMnziGA==}
     dependencies:
       '@types/history': 5.0.0
-      '@types/react': 18.0.15
+      '@types/react': 18.0.17
     dev: true
 
   /@types/react-router/5.1.18:
     resolution: {integrity: sha512-YYknwy0D0iOwKQgz9v8nOzt2J6l4gouBmDnWqUUznltOTaon+r8US8ky8HvN0tXvc38U9m6z/t2RsVsnd1zM0g==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.0.15
+      '@types/react': 18.0.17
     dev: true
 
   /@types/react/16.14.29:
@@ -2392,8 +2394,8 @@ packages:
       csstype: 3.1.0
     dev: true
 
-  /@types/react/18.0.15:
-    resolution: {integrity: sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==}
+  /@types/react/18.0.17:
+    resolution: {integrity: sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
