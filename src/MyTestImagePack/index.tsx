@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './index.less';
+// @ts-ignore
 import light from './example-light.png';
 
 class TestImagePack extends React.Component {
