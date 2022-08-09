@@ -1,5 +1,7 @@
 import './index.less';
 
+export { Form } from 'antd';
+
 export { default as Button } from './MyButton';
 export { default as Pagination } from './MyPagination';
 export { default as Breadcrumb } from './MyBreadcrumb';
@@ -17,3 +19,5 @@ export { default as Dropdown } from './MyDropdown';
 export { default as Slider } from './MySlider';
 export { default as Collapse } from './MyCollapse';
 export { default as TestImagePack } from './MyTestImagePack';
+
+export { default as ProFormLayout } from './ProFormLayout';
